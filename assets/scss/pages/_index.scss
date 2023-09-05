@@ -147,6 +147,11 @@
   cursor: pointer;
   height: 875px;
   position: relative;
+  border-left: 1px solid white;
+
+  &:nth-of-type(1) {
+    border-left: 0;
+  }
 
   @for $i from 1 through 4 {
     &:hover .hover-bg#{$i} {
@@ -171,6 +176,19 @@
 
   @include pad() {
     height: 650px;
+    border-left: 0;
+
+    &:nth-of-type(even) {
+      border-left: 1px solid gray;
+    }
+
+    &:nth-of-type(1) {
+      border-bottom: 1px solid gray;
+    }
+
+    &:nth-of-type(2) {
+      border-bottom: 1px solid gray;
+    }
   }
 
   @include phone() {

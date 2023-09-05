@@ -3,7 +3,6 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-AOS.init();
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
