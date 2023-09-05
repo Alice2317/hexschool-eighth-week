@@ -1,3 +1,178 @@
-.index-title {
-  font-size: 100px;
+// 1
+.bg-img {
+  @include img('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true', no-repeat, center, cover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 104px;
+  right: 0;
+  z-index: -999;
+
+  @include phone() {
+    @include linear(to bottom, #7000FF 0%, #11002D 100%, no-repeat, center, cover);
+  }
+}
+
+.col {
+  &:hover .hover-img {
+    cursor: pointer;
+    box-shadow: 0 0 16px 8px rgba(143, 0, 255, 0.80);
+  }
+}
+
+.title {
+  margin-bottom: -72px;
+
+  @include pad() {
+    display: block;
+    margin-bottom: 32px;
+  }
+}
+
+// 2
+.bg-img1 {
+  background-image: url('../images/carousel_mobile.png'), linear-gradient(to left, black, #300871);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, center;
+  background-size: 50vw 110%, cover;
+  position: absolute;
+  top: -104px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -999;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+  }
+
+  @include pad() {
+    background-size: 100% auto, cover;
+  }
+}
+
+.title1 {
+  margin-right: -32px;
+
+  @include pad() {
+    margin-right: -24px;
+  }
+}
+
+.hr1 {
+  margin-left: -64px;
+  margin-right: -64px;
+  margin-bottom: 32px;
+
+  @include pad() {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+.bg-linear-2 {
+  @include linear(to left, #7000FF 0%, #11002D 100%, no-repeat, center, cover);
+}
+
+// 3
+.bg-linear-3 {
+  @include radial(circle, #28085C, black, no-repeat);
+
+  @include pad() {
+    @include radial(ellipse, #28085C, black, no-repeat);
+  }
+}
+
+// 4
+.bg-linear-4 {
+  @include radial(ellipse, black, #380C7E, no-repeat);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "ALPHABOX+";
+    display: block;
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
+    font-size: 400px;
+    color: rgba(255, 255, 255, 0.04);
+    position: absolute;
+    bottom: -250px;
+  }
+}
+
+.scss-box {
+  max-width: 1608px;
+  margin-right: 0;
+
+  .swiper-slide {
+    aspect-ratio: 1/1;
+    -webkit-aspect-ratio: 1/1;
+    -moz-aspect-ratio: 1/1;
+    -ms-aspect-ratio: 1/1;
+    -o-aspect-ratio: 1/1;
+  }
+}
+
+// 6
+.ff-Saira {
+  font-family: 'Saira Extra Condensed', 'Noto Sans TC';
+  font-weight: 300;
+  font-size: 400px;
+  line-height: 1.5;
+
+  @include pc() {
+    font-size: 200px;
+  }
+
+  @include pad() {
+    font-size: 128px;
+  }
+}
+
+.hover-bg {
+  background: black;
+  cursor: pointer;
+  height: 875px;
+  position: relative;
+
+  @for $i from 1 through 4 {
+    &:hover .hover-bg#{$i} {
+      @include img('../images/vertical_#{$i}.png', no-repeat, top center, cover);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  @include pad() {
+    height: 650px;
+  }
+
+  @include phone() {
+    height: 406px;
+  }
 }

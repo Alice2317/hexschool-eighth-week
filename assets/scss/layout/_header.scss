@@ -1,4 +1,22 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
-}
+  .bg-linear-1 {
+    background: #6D01F7;
+
+    @include pad() {
+      @include linear(to bottom, #7000FF 0%, #11002D 100%, no-repeat, center, cover);
+    }
+  }
+
+  .collapse1 {
+    z-index: 1;
+    @include pad() {
+      border-top: 1px solid white;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 80px;
+    }
+
+    @include pad() {
+      top: 68px;
+    }
+  }

@@ -1,0 +1,21 @@
+.bar {
+    padding-top: 38px;
+    overflow: hidden;
+
+    .swiper-scrollbar,
+    .swiper-scrollbar.swiper-scrollbar-horizontal {
+        position: relative !important;
+        top: 10px;
+        left: 0;
+        height: 4px;
+
+    }
+
+    .swiper-scrollbar {
+        background: rgba(255, 255, 255, 0.2);
+
+        .swiper-scrollbar-drag {
+            background: white;
+        }
+    }
+}

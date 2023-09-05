@@ -1,0 +1,126 @@
+.ff-Shrikhand {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 400;
+}
+
+.fw-Regular {
+  font-weight: 400;
+}
+
+.fw-Regular {
+  font-weight: 400;
+}
+
+.ts-4 {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL'1,
+    'wght'400,
+    'GRAD'0,
+    'opsz'24
+}
+
+// font-size
+@for $i from 8 through 96 {
+  .fs-#{$i} {
+    font-size: $i * 1px;
+  }
+}
+
+@for $i from 8 through 96 {
+  @include pad() {
+    .fs-sm-#{$i} {
+      font-size: $i * 1px;
+    }
+  }
+}
+
+// 客製化width&height
+@each $w in $width-px {
+  .w-px-#{$w} {
+    width: $w * 1px;
+  }
+
+  .w-px-sm-#{$w} {
+    @include pad() {
+      width: $w * 1px;
+    }
+  }
+}
+
+@each $h in $height-px {
+  .h-px-#{$h} {
+    height: $h * 1px;
+  }
+
+  .h-px-sm-#{$h} {
+    @include pad() {
+      height: $h * 1px;
+    }
+  }
+}
+
+// 客製化字元間隔
+.ls-sm-1-6 {
+  letter-spacing: 1.6px;
+}
+
+.ls-sm-16 {
+  letter-spacing: 16px;
+}
+
+.ls-16 {
+  letter-spacing: 16px;
+
+  @include pad() {
+    letter-spacing: 4.8px;
+  }
+}
+
+.ls-sm-20 {
+  letter-spacing: 20px;
+}
+
+.ls-48 {
+  letter-spacing: 48px;
+
+  @include pad() {
+    letter-spacing: 24px;
+  }
+}
+
+.ls-32 {
+  letter-spacing: 32px;
+
+  @include pad() {
+    letter-spacing: 24px;
+  }
+}
+
+.ls-80 {
+  letter-spacing: 80px;
+
+  @include pad() {
+    letter-spacing: 26px;
+  }
+}
+
+// border
+.border-end-sm-0 {
+  @include pad() {
+    border-right: 0 !important;
+  }
+}
+
+.border-start-sm-0 {
+  @include pad() {
+    border-left: 0 !important;
+  }
+}
+
+.auto-m {
+  margin: 0 0 0 auto;
+}

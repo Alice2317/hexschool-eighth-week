@@ -1,0 +1,63 @@
+// 有箭頭的btn
+.btn1 {
+    width: 192px;
+    height: 24px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 182px;
+        height: 24px;
+        border-top: 4px solid white;
+        transform: translate(-92%, 40%);
+    }
+}
+
+.btn2 {
+    width: 86px;
+    height: 24px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 76px;
+        height: 24px;
+        border-top: 4px solid white;
+        transform: translate(-80%, 40%);
+    }
+}
+
+.btn4 {
+    width: 151px;
+    height: 24px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 141px;
+        height: 24px;
+        border-top: 4px solid white;
+        transform: translate(-90%, 40%);
+    }
+
+    @include pc() {
+        width: 100%;
+
+        &::before {
+            width: 96%;
+            transform: translate(-95%, 40%);
+        }
+    }
+}
+
+// 無箭頭的btn
+.btn3 {
+    width: 416px;
+
+    @include pad() {
+        width: 100%;
+    }
+}

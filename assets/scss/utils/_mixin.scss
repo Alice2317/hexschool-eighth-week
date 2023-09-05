@@ -1,0 +1,42 @@
+// @mixin pc-2xl {
+//     @media (max-width: 1600px) {
+//         @content;
+//     }
+// }
+
+@mixin pc {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin pad {
+    @media(max-width: 990px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media(max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin linear($direction, $color1, $color2, $repeat, $position, $cover) {
+    background-image: linear-gradient($direction, $color1, $color2);
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $cover;
+}
+
+@mixin radial($direction, $color1, $color2, $repeat) {
+    background-image: radial-gradient($direction, $color1, $color2);
+    background-repeat: $repeat;
+}
+
+@mixin img($url, $repeat, $position, $cover) {
+    background-image: url($url);
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $cover;
+}
