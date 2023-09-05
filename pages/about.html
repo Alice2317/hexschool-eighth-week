@@ -1,16 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about</title>
+  <%- include('./layout/head'); -%>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <main>
+
+      <!-- 1 -->
+      <section class="bg-linear-3 text-white">
+        <div class="container pt-60 pt-lg-153">
+          <div class="row">
+            <div class="col-12 col-lg-12">
+              <h2 class="fs-48 fs-sm-40 ls-48 fw-bold mb-24 mb-lg-32">關於我們</h2>
+            </div>
+            <div class="col-12 col-lg-6">
+              <p class="mb-32 mb-lg-0">
+                創立於2021年，我們的使命是將科技與人性化設計相結合，為您打造最佳的3D立體投影陪伴機器人。憑藉創新的技術、卓越的研發團隊以及對品質的追求，我們致力於為全球用戶提供最先進且易用的陪伴機器人。
+              </p>
+            </div>
+            <div class="col-12 col-lg-6 text-lg-end">
+              <p class="fw-light fs-14 mb-24 mb-lg-0">
+                我們擁抱變革，追求技術創新，以提供更卓越的產品給全球用戶。
+              </p>
+              <p class="fw-light fs-14 mb-24 mb-lg-0">
+                我們始終以用戶需求為核心，致力於提供最滿意的產品與服務。
+              </p>
+              <p class="fw-light fs-14 mb-24 mb-lg-0">
+                我們堅持高品質標準，確保每一款產品都經過嚴格的測試與品質把控。
+              </p>
+              <p class="fw-light fs-14">
+                我們重視團隊協作，鼓勵創意交流，共同為實現願景而努力。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid mb-16 mb-lg-44 mt-24 mt-lg-36 p-0">
+          <picture>
+            <source
+              srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/mobile/about_us_mobile.png?raw=true"
+              media="(max-width: 420px)" class="img-fluid" alt="about_us_mobile" />
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/about_us.png?raw=true"
+              alt="about_us" class="img-fluid" />
+          </picture>
+        </div>
+
+        <div class="container pb-80 pb-lg-156">
+          <div class="row">
+            <div class="col-12 col-lg-2"></div>
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center col-12 col-lg-8">
+              <span class="material-symbols-outlined me-0 me-lg-24 mb-8 mb-lg-0 fs-60">
+                emergency
+              </span>
+              <p>我們相信科技的力量能夠改變人類生活。通過不斷創新與優化，我們期待為您打造一款具有高度智能、豐富功能且呈現真實感的3D立體投影陪伴機器人，讓科技成為您生活中真誠的夥伴。</p>
+            </div>
+            <div class="col-12 col-lg-2"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 2 -->
+      <section class="container-fluid px-12 px-lg-80">
+        <!-- top -->
+        <div class="row row-cols-1 row-cols-lg-3 pt-24 pt-lg-40 g-0 g-lg-6">
+          <div class="col">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/hand.png?raw=true"
+              alt="hand" class="img-fluid">
+          </div>
+          <div class="col d-none d-lg-flex">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/screen.png?raw=true"
+              alt="screen" class="img-fluid">
+          </div>
+          <div class="col d-none d-lg-flex">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/box.png?raw=true"
+              alt="box" class="img-fluid">
+          </div>
+        </div>
+        <!-- middle -->
+        <div class="text-center overflow-hidden mt-24 mt-lg-40">
+          <h3 class="fs-96 fs-sm-24 ls-96 fw-black">ALPHABOX+</h3>
+        </div>
+        <!-- bottom -->
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-start justify-content-lg-between mt-24 mt-lg-80 mb-24 mb-lg-80">
+          <p class="w-px-758">
+            我們提供多款3D立體投影陪伴機器人，涵蓋知識型、娛樂型、生活型和情感型等不同類別，以滿足您的各種需求。每款產品都經過精心設計，具備高度智能化、多功能和人性化操作等特點，讓您在日常生活中獲得更便利的陪伴體驗。
+          </p>
+
+          <p class="w-px-590 pt-24">
+            此外，我們還提供完善的售後服務，包括<span class="mark1">產品保固</span>、<span class="mark1">技術支援</span>及<span
+              class="mark1">線上客服</span>協助，確保您在購買與使用過程中得到全面支持。
+          </p>
+        </div>
+
+        <hr>
+        <hr class="hr2">
+      </section>
+
+      <!-- 3 -->
+      <section class="container">
+        <div class="row py-60 py-lg-160 align-items-center">
+          <div class="col-12 col-lg-7">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/meeting.png?raw=true"
+              alt="meeting" class="img-fluid">
+          </div>
+          <div class="col-12 col-lg-5">
+            <p class="mt-16 mt-lg-0">展望未來，我們將繼續投入研發，引領3D立體投影陪伴機器人技術的發展。通過結合虛擬現實、擴增現實和人工智能等領域的最新技術，我們將努力為用戶帶來更多前所未有的創新體驗。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 -->
+      <section class="bg-black py-48 py-lg-24 text-white">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <p>我們熱忱歡迎有志之士加入我們的團隊，共同創造更美好的未來。如果您對科技充滿熱情，並擁有相關領域的專業知識，請隨時查看我們的招聘信息或與我們聯繫，讓我們攜手共進。</p>
+            </div>
+            <div class="col-12 col-lg-2">
+              <a class="btn btn-white btn5 text-black border-0 rounded-1 mt-24 mt-lg-0" href="#"><i
+                  class="material-symbols-outlined align-bottom pe-8">point_scan</i>查看職缺</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

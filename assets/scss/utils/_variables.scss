@@ -294,12 +294,13 @@ $theme-colors: ("primary": #7000FF,
   "neutral-1":#AD93CF,
   "secondary": #1F0F39,
   "success": $success,
-  "info": $info,
+  "info": #E9E2F3,
   "warning": $warning,
   "danger": $danger,
   "light": $light,
   "dark": $dark,
-  "white": white) !default;
+  "white": white,
+  "black": black) !default;
 // scss-docs-end theme-colors-map
 
 // Characters which are escaped by the escape-svg function
@@ -366,6 +367,7 @@ $spacers: (0: 0,
   34:34px,
   36:36px,
   40:40px,
+  44:44px,
   48:48px,
   52:52px,
   54:54px,
@@ -379,6 +381,7 @@ $spacers: (0: 0,
   113:113px,
   135:135px,
   153:153px,
+  156:156px,
   160:160px) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -464,8 +467,8 @@ $gutters: (0: 0,
   2: $spacer * .5,
   3: $spacer,
   4: $spacer * 1.5,
-  5: $spacer * 2,
-  6: $spacer * 2.5,
+  5: $spacer * 2, //16
+  6:$spacer * 2.5 //20
 );
 $grid-row-columns: 6 !default;
 

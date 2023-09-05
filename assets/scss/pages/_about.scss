@@ -1,0 +1,48 @@
+// 2
+.mark1 {
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        content: "";
+        height: 12px;
+        background: #E9E2F3;
+    }
+}
+
+.w-px-758 {
+    max-width: 758px;
+
+    @media screen and (max-width:1600px) {
+        max-width: 60%;
+    }
+
+    @include pad() {
+        max-width: 100%;
+    }
+}
+
+.w-px-590 {
+    max-width: 590px;
+
+    @media screen and (max-width:1600px) {
+        max-width: 30%;
+    }
+
+    @include pad() {
+        max-width: 100%;
+    }
+}
+
+.hr2{
+    border-width: 12px;
+}

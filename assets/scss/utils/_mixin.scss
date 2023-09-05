@@ -1,9 +1,3 @@
-// @mixin pc-2xl {
-//     @media (max-width: 1600px) {
-//         @content;
-//     }
-// }
-
 @mixin pc {
     @media (max-width: 1200px) {
         @content;

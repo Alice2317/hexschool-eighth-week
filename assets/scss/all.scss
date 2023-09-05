@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Saira+Extra+Condensed:wght@300&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;400;500;700;900&family=Saira+Extra+Condensed:wght@300&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../scss/vendors/slick/slick";
@@ -13,6 +13,7 @@
 @import './components/btn';
 @import './components/scrollbar';
 
-@import './layout/header.scss';
+@import './layout/header';
 
-@import './pages/index.scss';
+@import './pages/index';
+@import './pages/about';
